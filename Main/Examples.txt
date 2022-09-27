@@ -1,0 +1,55 @@
+Text Moveable
+==============================
+
+var txtMoveable = new TextMoveable({
+  size: '32px',
+  text_content: 'New', 
+  heading_type: 'h1',
+  color: 'red',
+});
+
+//Creates with properties
+===============================
+txtMoveable.drag(true); //Make it drag
+===============================
+
+var txtMoveable2 = new TextMoveable({
+  size: '32px',
+  text_content: '!New', 
+  heading_type: 'h1',
+  color: 'blue', //Change color blue
+});
+
+//Make another one this time color blue
+
+================================
+
+var imgMoveable = new ImageMovable({
+width: '100px',
+height: '100px', 
+src: 'browse'
+});
+
+//New image moveable with browse src
+
+================================
+
+imgMoveable.drag(true); //Drag true
+
+================================
+
+new RootMovable(txtMoveable);
+
+new RootMovable(txtMoveable2);
+
+new RootMovable(imgMoveable);
+
+//Turn them into root moveables IE: can be used as toolbar
+
+================================
+
+imgMoveable.drag(true); //Drag true
+
+================================
+
+convert_all_to_moveable(); //Convert all objects with html attribute " moveable = 'true' " to moveables
