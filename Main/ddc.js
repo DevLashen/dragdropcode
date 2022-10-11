@@ -471,7 +471,6 @@ function move_to_mouse_by_event(object, e){
 
     var obj_x = e.pageX - (obj_width / 2);
     var obj_y = e.pageY - (obj_height / 2);
-
     object.element.style.top = obj_y + "px";
     object.element.style.left = obj_x + "px";
 }
